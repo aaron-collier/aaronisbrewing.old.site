@@ -1,0 +1,7 @@
+url: http://aaronisbrewing.github.io
+permalink: /:categories/:title
+exclude: [node_modules]
+future: true
+timezone: America/Los_Angeles
+sass:
+  sass_dir: assets/_scss
