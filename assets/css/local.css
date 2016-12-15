@@ -3,7 +3,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.navbar-brand a {
+.navbar-brand {
   color: #ffffff;
   display: block;
   font-weight: 400;
