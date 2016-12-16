@@ -12,5 +12,6 @@ title: Spirits
 </div>
 
 {% for spirit in site.data.spirits %}
-{{ spirit.Name }}
+{% assign spirit_type = spirit[1] %}
+{{ spirit_type.Name }}
 {% endfor %}
