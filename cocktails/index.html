@@ -3,3 +3,10 @@ layout: page
 title: Cocktails
 description:
 ---
+
+<section>
+    {% assign classes = site.data.classes %}
+    {% for class in classes %}
+      <h4>{{ class.title }}</h4>
+    {% endfor %}
+</section>
