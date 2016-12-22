@@ -11,7 +11,7 @@ description:
       {% assign cocktails = site.posts | where:"classification",class.classification %}
       <ul>
       {% for cocktail in cocktails %}
-        <li><a href="">{{ cocktail.title }}</a></li>
+        <li><a href="{{ cocktail.url }}">{{ cocktail.title }}</a></li>
       {% endfor %}
       </ul>
     {% endfor %}
