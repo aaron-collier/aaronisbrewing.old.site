@@ -8,5 +8,9 @@ description:
     {% assign classes = site.data.classes %}
     {% for class in classes %}
       <h4>{{ class.title }}</h4>
+      {% assign cocktails = site.cocktails.recipes | where:"classification",class.classification %}
+      {% for cocktail in cocktails %}
+        <a href="{{ cocktail.url }}">{{ cocktail.title }}</a><br />
+      {% endfor %}
     {% endfor %}
 </section>
