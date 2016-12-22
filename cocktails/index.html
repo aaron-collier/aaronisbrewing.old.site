@@ -8,7 +8,7 @@ description:
     {% assign classes = site.data.classes %}
     {% for class in classes %}
       <h4>{{ class.title }}</h4>
-      {% assign cocktails = site.content.recipes | where:"classification",class.classification %}
+      {% assign cocktails = site.content | where:"classification",class.classification %}
       <ul>
       {% for cocktail in cocktails %}
         <li><a href="">{{ cocktail.title }}</a></li>
