@@ -10,9 +10,11 @@ layout: default
 
   <section class="wrapper style5">
     <div class="inner">
+      <ul>
       {% for ingredient in page.ingredients %}
-      {{ ingredient }}
+        <li>{{ ingredient }}</li>
       {% endfor %}
+      </ul>
     </div>
   </section>
 
