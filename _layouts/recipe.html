@@ -12,7 +12,7 @@ layout: default
     <div class="inner">
       <ul>
       {% for i in (0..page.ingredients.size) %}
-        {% if volumes[i] %}
+        {% if page.volumes[i] %}
           <li>{{ page.volumes[i] }} - {{ page.ingredients[i] }}</li>
         {% endif %}
       {% endfor %}
