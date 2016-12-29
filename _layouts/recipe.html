@@ -11,7 +11,7 @@ layout: default
   <section class="wrapper style5">
     <div class="inner">
       <ul>
-      {% for i in (0..page.ingredients.size) %}
+      {% for i in (0..page.ingredients.size-1) %}
         <li>{{ page.volumes[i] }} - {{ page.ingredients[i] }}</li>
       {% endfor %}
       </ul>
